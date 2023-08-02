@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="style.CSS">
+	<script src="https://unpkg.com/scrollreveal"></script>
+	<title>Hithesh's portfolio website</title>
+</head>
+<body>
+	<header>
+        <div id="HOME"></div>
+	 <div class="container">
+		<nav>
+			<div class="logo"><a href="index.HTML">Hithesh_PORTFOLIO<b>.</b></a></div>
+			<ul class="navitems">
+				<li><a href="#HOME">Home</a></li>
+				<li><a href="#ABOUT">About</a></li>
+				<li><a href="#PROJECTS">Projects</a></li>
+				<li><a href="#INTERNSHIPS">Internships</a></li>
+				<li><a href="#SKILLS">Skills</a></li>
+                
+
+			</ul>
+
+			<img src="moon.png" id="icon">
+
+
+			<div class="links">
+				<a href="https://www.linkedin.com/in/mungara-hithesh-yadav-7a473a20b/"><i class="fab fa-linkedin"></i></a>
+				<a href="https://instagram.com/hithesh_yadav_?igshid=YmMyMTA2M2Y="><i class="fab fa-instagram"></i></a>
+				<a href="https://twitter.com/HitheshYadav3"><i class="fab fa-twitter"></i></a>
+				<a href="https://github.com/Hitheshgithub"><i class="fab fa-github"></i></a>
+				<a href="https://www.facebook.com/hithesh.yadav.50"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.youtube.com/channel/UCRhrGeg5VPgRrbDBSpuTxDA"><i class="fab fa-youtube"></i></a>
+			</div>
+		</nav>
+
+		<div class="wrapper">
+			<div class="cols cols0">
+				<span class="topline">Hello!</span>
+				<h1>I'm <span class="multiText">Hithesh Yadav</span></h1>
+				<p><strong>This is my Portfolio website to show case my Skills and Info.</strong></p>
+                <p><strong>You can see my Resume and Certifications below.</strong></p>
+				<div class="btns">
+					<a href="Hithesh_Resume.pdf"><button>Download Resume</button></a>
+                    <a href="certification.pdf"><button>Certificates</button></a>
+				</div>
+			</div>
+			<div class="cols cols1">
+				<div class="imgbox">
+					<img src="splash.png" id="splash">
+					<img src="img.png">
+				</div>
+			</div>
+		</div>
+	 </div>
+    </header>
+    
+
+      <!--script.js--->
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+	<script>
+	var typingEffect = new Typed(".multiText",{
+		strings : ["Hithesh Yadav","B.E(ECE)-Student","Coder","Hithesh Yadav"],
+		loop : true,
+		typeSpeed : 100,
+		backSpeed : 80,
+		backDelay : 1500
+	})
+    </script>
+    <script>
+    	var icon = document.getElementById("icon");
+    	icon.onclick = function(){
+    		document.body.classList.toggle("dark-theme");
+    		if (document.body.classList.contains("dark-theme")) {
+    			icon.src = "sun.png";
+                
+    		}else{
+    			icon.src = "moon.png";
+
+               
+    		}
+    		}
+    		
+    	
+    </script>
+    <script>
+    	ScrollReveal({
+    		reset: true,
+    		distance: '60px',
+    		duration: 2500,
+    		delay: 400
+    	});
+    	ScrollReveal().reveal('.container',{ delay:500, origin: 'left'});
+    	ScrollReveal().reveal('.wrapper',{ delay:600, origin: 'bottom'});
+
+    </script>
+
+    <About-section>
+        <div id="ABOUT"></div>
+    	<div class="about">
+    		<div class="inner-container">
+    			<h1>About ME</h1>
+    			<p class="text"><strong>Hi</strong> This is <strong>M.Hitheshyadav</strong> Born and broughtup from Nellore,Andhra-pradesh.Currently Pursuing Bachelore's Degree Final Year in <strong>R.M.K College of Engineering and Technology</strong> in Department of Electronics and Communication(EC)-(2019-2023).Recently got an offer in <strong>ATOS-INDIA</strong>.TechnicalSkills:PYTHON,C,HTML/CSS and JAVASCRIPT.OtherSkills:Community-involvement,Hardwork and Solving/Thinking.Hobbies:Website-Designs,Uptodate with new Techs and Games.
+    			</p>
+    		 <div class="ed">
+    		 	<h2>Education</h2>
+    		 	<p class="text1">1.Bachelore's degree(ECE) in RMK College Of Engineering and Technology 2019-2023.(Poduvoyal-Chennai/Tamilnadu)2.Intermediate (M.P.C) in Narayana Juniour College 2017-2019.(Nellore/Andhrapradesh)3.SSC in Ratnam High School-2017.(Nellore/Adhrapradesh)</p>
+    		 </div>
+    		</div>
+    		
+    	</div>
+
+    	<script>
+    	ScrollReveal({
+    		reset: true,
+    		distance: '60px',
+    		duration: 2500,
+    		delay: 400
+    	});
+    	ScrollReveal().reveal('.about',{ delay:500, origin: 'left'});
+    	ScrollReveal().reveal('.inner-container',{ delay:600, origin: 'right'});
+    	ScrollReveal().reveal('.text',{ delay:500, origin: 'top'});
+    	ScrollReveal().reveal('.ed',{ delay:400, origin: 'right'});
+    </script>
+  </About-section>
+
+  <div class = "project">
+    <div id="PROJECTS"></div>
+        <div class = "testimonial">
+            <div class = "title">
+                <h2>MY <span>PROJECTS</span></h2>
+                <h3>Project Details</h3>
+            </div>
+
+            <div class = "content1">
+                <div class = "clients-list">
+                    <div class = "clients-tabs">
+                        <!-- item -->
+                        <div class = "client-item">
+                            <div class = "client-thumbnail">
+                                <img src = "laser.jpg" alt = "">
+                            </div>
+                            <div class = "client-intro">
+                                <h5 class = "client-name">Laser Light alaram System</h5>
+                                <small class = "client-designation">08/06/2021</small>
+                                <p class = "client-description">The Laser Light alaram System is used to protect Home and Lockers anything By Thefts.This project is usinh laser beam to detect object which is entering into restricted zone and use Alarm to alert. <strong>To Veiw details click on File icon</strong></p>
+
+                                  <div class="links">
+				                            <a href="LLA-PPT.PPTM"><i class="fa fa-file" aria-hidden="true"></i></a>
+				                           
+			                            </div>
+                            </div>
+                        </div>
+
+                        <!-- end of item  -->
+
+                        <!-- item -->
+                        <div class = "client-item">
+                            <div class = "client-thumbnail">
+                                <img src = "iot.jpg" alt = "">
+                            </div>
+                            <div class = "client-intro">
+                                <h5 class = "client-name">Automatic /ar Parking System</h5>/
+                                <small class = "client-designation">08/11/2021</small>
+                                <p class = "client-description">The Automatic Car Parking System is helps to park vehicles in less time. it will reduce traffic and Pollution.<strong>To Veiw details click on File icon</strong></p>
+                                <div class="links">
+				                           <a href="iot-ppt.pptx"><i class="fa fa-file" aria-hidden="true"></i></a>
+				                            
+			                            </div>
+                            </div>
+                        </div>
+                        <!-- end of item  -->
+
+                        <!-- item -->
+                        <div class = "client-item">
+                            <div class = "client-thumbnail">
+                                <img src = "virtualkb.png" alt = "">
+                            </div>
+                            <div class = "client-intro">
+                                <h5 class = "client-name">Virtual keyBoard(OPENCV)</h5>
+                                <small class = "client-designation">06/05/2022</small>
+                                <p class = "client-description">This project is done on MINI-PROJECT contest conducuted by my college.About the project it is based on OpenCvusing python language and pycharm i created this Virtual keyboard it use the web cam and it track the Hand positions by cam it response.<strong>To Veiw details click on File icon</strong></p>
+                                <div class="links">
+				                           <a href="vkb.pdf"><i class="fa fa-file" aria-hidden="true"></i></a>
+				                             
+			                            </div>
+                            </div>
+                        </div>
+                        <!-- end of item  -->
+
+                        <!-- end of item  -->
+
+                        <!-- item -->
+                        <div class = "client-item">
+                            <div class = "client-thumbnail">
+                                <img src = "web.jpg" alt = "">
+                            </div>
+                            <div class = "client-intro">
+                                <h5 class = "client-name">Single Page Website</h5>
+                                <small class = "client-designation">01/08/2021 - 01/09/2021</small>
+                                <p class = "client-description">This Project is about a Single page website to learn the basic of HTML,CSS and JS.<strong>To Veiw details click on File icon</strong></p>
+                                <div class="links">
+				                            <a href="lgm.mp4"><i class="fa fa-file" aria-hidden="true"></i></a>
+				                            
+			                            </div>
+                            </div>
+                        </div>
+                        <!-- end of item  -->
+                    </div>
+                </div>
+
+                <div class = "show-info">
+                    <div class = "show-img">
+                        <img src = "" alt = "Certificate image">
+                    </div>
+
+                    <div class = "show-text">
+                        <div>
+                            <h4 class = "show-name"><!--Erick Jones--></h4>
+                            <small class = "show-designation"><!--Managing Director--></small>
+                        </div>
+                        <p class = "show-description"><!--Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt assumenda nostrum dignissimos et repellat illum omnis repudiandae atque, ducimus quo, est delectus tempore facilis odit ullam magnam accusantium cumque ipsa!--></p>
+
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+	const clientTabItems = document.querySelectorAll('.client-item');
+const showDiv = document.querySelector('.show-info');
+
+clientTabItems.forEach((item) => {
+    item.addEventListener('click', () => {
+        showInfo(item);
+    });
+});
+
+function showInfo(item){
+    showDiv.querySelector('.show-img img').src = item.querySelector('.client-thumbnail img').src;
+    showDiv.querySelector('.show-name').innerHTML = item.querySelector('.client-name').innerHTML;
+    showDiv.querySelector('.show-designation').innerHTML = item.querySelector('.client-designation').innerHTML;
+    showDiv.querySelector('.show-description').innerHTML = item.querySelector('.client-description').innerHTML;
+    setActiveTab(item);
+}
+
+function setActiveTab(item){
+    clientTabItems.forEach((item) => {
+        item.classList.remove('active'); // resetting active tab
+    });
+    item.classList.add('active');
+}
+
+showInfo(clientTabItems[0]); // default active tab
+</script>
+	<script>
+    	ScrollReveal({
+    		reset: true,
+    		distance: '60px',
+    		duration: 2500,
+    		delay: 400
+    	});
+    	ScrollReveal().reveal('.title',{ delay:500, origin: 'left'});
+    	ScrollReveal().reveal('.content1',{ delay:600, origin: 'right'});
+    	ScrollReveal().reveal('.client-item',{ delay:500, origin: 'top'});
+    	ScrollReveal().reveal('.client-intro',{ delay:400, origin: 'bottom'});
+    	ScrollReveal().reveal('.show-info',{ delay:400, origin: 'right'});
+    	ScrollReveal().reveal('.show-description',{ delay:400, origin: 'bottom'});
+    	ScrollReveal().reveal('.testimonial',{ delay:800, origin: 'left'});
+
+    </script>
+<int-sec>
+    <div id="INTERNSHIPS"></div>
+    <div class="title">
+	<h2>Internship Details</h2>
+    </div>
+ <div class="Internship">
+     
+      <div class="box">
+      <div class="image">
+        <img src="DF.png">
+        </div>
+        <div class="name_job">Technology Virtual Experience Program</div>
+        <div class="rating">
+        </div>
+        <p> Technology Virtual Experience Program by Forage Collabrating with Delloite (MARCH - 2023).</p>
+        <div class="btn">
+          <a href="DLF.pdf"><button>Read More</button></a>
+         
+        </div>
+      </div>
+
+
+      <div class="box">
+      <div class="image">
+        <img src="aws.jpg">
+        </div>
+        <div class="name_job">AWS Cloud Solution Architecture</div>
+        <div class="rating">
+           
+        </div>
+        <p>AWS Academy Graduate - AWS Academy Cloud Architecting (26/06/2023)</p>
+        <div class="btn">
+          <a href="aws1.pdf"><button>Read More</button></a>
+         
+        </div>
+      </div>
+
+      <div class="box">
+      <div class="image">
+        <img src="GC.JPG">
+        </div>
+        <div class="name_job">Genrative AI Fundamentals By Google clouds</div>
+        <div class="rating">
+                <a href="https://www.cloudskillsboost.google/public_profiles/c1029c27-b0a3-4c8c-a73d-3845b1505056" class="icon">
+                     <i class="fa-brands fa-google"></i>
+                 </a>
+        </div>
+        <p>Genrative AI Fundamentals By Google clouds(AI and Machine Learning) JULY - 2023</p>
+        <div class="btn">
+          <a href="https://www.cloudskillsboost.google/public_profiles/c1029c27-b0a3-4c8c-a73d-3845b1505056"><button>Read More</button></a>
+         
+        </div>
+      </div>
+
+
+         <div class="box">
+      <div class="image">
+        <img src="wip.jfif">
+        </div>
+        <div class="name_job">WIPROTalentNext</div>
+        <div class="rating">
+                <a href="https://www.facebook.com/WiproLimited/?paipv=0" class="icon">
+                     <i class="fa-brands fa-facebook"></i>
+                 </a>
+
+                 <a href="https://www.instagram.com/wiprolimited/" class="icon">
+                     <i class="fa-brands fa-instagram"></i>
+                 </a>
+                    
+
+                 <a href="https://www.linkedin.com/company/wipro" class="icon">
+                     <i class="fa-brands fa-linkedin"></i>
+                 </a>
+        </div>
+        <p> Wipro TalentNext Completing the course of Java J2EE Held on May to September in 2022</p>
+        <div class="btn">
+          <a href="wipro.pdf"><button>Read More</button></a>
+         
+        </div>
+      </div>
+
+       <div class="box">
+      <div class="image">
+        <img src="intern1.png">
+        </div>
+        <div class="name_job">LET'S GROW MORE(Web-Development)</div>
+        <div class="rating">
+                <a href="https://www.facebook.com/letsgrowmore/" class="icon">
+                     <i class="fa-brands fa-facebook"></i>
+                 </a>
+
+                 <a href="https://www.instagram.com/letsgrowmore.in/" class="icon">
+                     <i class="fa-brands fa-instagram"></i>
+                 </a>
+                    
+
+                 <a href="https://www.linkedin.com/company/letsgrowmore" class="icon">
+                     <i class="fa-brands fa-linkedin"></i>
+                 </a>
+        </div>
+        <p> In this Internship they given Two tasks.Task-1 - Single page website and Task-2 - react.js Profile user cards. Internship period(01/08/2021 - 01/09/2021).</p>
+        <div class="btn">
+          <a href="1.jpg"><button>Read More</button></a>
+         
+        </div>
+      </div>
+
+
+      <div class="box">
+      <div class="image">
+        <img src="pantech.jpg">
+        </div>
+        <div class="name_job">PANTECH SOLUTIONS
+BLOCKCHAIN USING PYTHON</div>
+        <div class="rating">
+                <a href="https://www.facebook.com/pantechsolutions/" class="icon">
+                     <i class="fa-brands fa-facebook"></i>
+                 </a>
+
+                 <a href="https://www.instagram.com/p/CF2aKZCjA_U/?hl=en" class="icon">
+                     <i class="fa-brands fa-instagram"></i>
+                 </a>
+                    
+
+                 <a href="https://in.linkedin.com/company/pantech-solutions-pvt-ltd?trk=similar-pages" class="icon">
+                     <i class="fa-brands fa-linkedin"></i>
+                 </a>
+        </div>
+        <p>This is a Inplant training about BlockChain USing Python language. They teached about Block chain in Python. </p>
+        <div class="btn">
+          <a href="6.jpg"><button>Read More</button></a>
+         
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+         <img src="exposys.jfif" alt="">
+        </div>
+        <div class="name_job">EXPOSY'S DATA LABS (Data Science)</div>
+        <div class="rating">
+           <a href="https://www.facebook.com/Exposysdatalabs/" class="icon">
+                     <i class="fa-brands fa-facebook"></i>
+                 </a>
+
+                 <a href="https://www.instagram.com/p/CZS-X5bvEOs/" class="icon">
+                     <i class="fa-brands fa-instagram"></i>
+                 </a>
+                    
+
+                 <a href="https://in.linkedin.com/company/upchat-technologies" class="icon">
+                     <i class="fa-brands fa-linkedin"></i>
+                 </a>
+        </div>
+        <p>The Internship is about Data-science using Python.The Project is Customer segmentation. Internship period(31/07/2021 - 20/08/2021)</p>
+        <div class="btn">
+          <a href="2.jpg"><button>Read More </button></a>
+          
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+         <img src="intern3.png" alt="">-
+        </div>
+        <div class="name_job">RESPRO LABS(Data Engineering)</div>
+          <div class="rating">
+           <a href="https://resprolabs.in/contact.html" class="icon">
+                     <i class="fa-brands fa-facebook"></i>
+                 </a>
+
+                 <a href="https://resprolabs.in/contact.html" class="icon">
+                     <i class="fa-brands fa-twitter"></i>
+                 </a>
+                    
+
+                 <a href="https://resprolabs.in/contact.html" class="icon">
+                     <i class="fa-brands fa-linkedin"></i>
+                 </a>
+        </div>
+        <p> The Internship about Data Engineering They teached postgresql basic and how to use CMD promt to do Sql in that. Internship period(02/03/2022 - 08/03/2022)</p>
+        <div class="btn">
+          <a href="4.jpg"><button>Read More</button></a>
+          
+        </div>
+      </div>
+
+       <div class="box">
+      <div class="image">
+        <img src="pantech.jpg">
+        </div>
+        <div class="name_job">PANTECH SOLUTION(MATLAB)</div>
+        <div class="rating">
+                 <a href="https://www.facebook.com/pantechsolutions/" class="icon">
+                     <i class="fa-brands fa-facebook"></i>
+                 </a>
+
+                 <a href="https://www.instagram.com/p/CF2aKZCjA_U/?hl=en" class="icon">
+                     <i class="fa-brands fa-instagram"></i>
+                 </a>
+                    
+
+                 <a href="https://in.linkedin.com/company/pantech-solutions-pvt-ltd?trk=similar-pages" class="icon">
+                     <i class="fa-brands fa-linkedin"></i>
+                 </a>
+        </div>
+        <p> This is RENEWABLE Energy master class  held on 30 days from october 17 to November 16 in 2021</p>
+        <div class="btn">
+          <a href="5.jpg"><button>Read More</button></a>
+         
+        </div>
+      </div>
+    </div>
+    
+
+  </int-sec>
+  <script>
+    	ScrollReveal({
+    		reset: true,
+    		distance: '60px',
+    		duration: 2500,
+    		delay: 400
+    	});
+    	ScrollReveal().reveal('.Internship',{ delay:500, origin: 'left'});
+    	ScrollReveal().reveal('.box',{ delay:600, origin: 'right'});
+    	ScrollReveal().reveal('.name_job',{ delay:400, origin: 'right'});
+    	ScrollReveal().reveal('.rating',{ delay:400, origin: 'bottom'});
+    	ScrollReveal().reveal('.btn',{ delay:800, origin: 'top'});
+        ScrollReveal().reveal('.title',{ delay:800, origin: 'top'});
+
+    </script>
+
+          
+ 
+
+
+
+
+ 
+ <div id="SKILLS">
+   <div class="Skill">
+    <h1>MY SKILLS</h1>
+    <div class="badges">
+        <div class="skilcons"><img src="HTML.png"></div>
+        <div class="skilcons"><img src="CSS.png"></div>
+        <div class="skilcons"><img src="JS.png"></div>
+        <div class="skilcons"><img src="PYTHON.png"></div>
+        <div class="skilcons"><img src="aws.jpg"></div>
+        <div class="skilcons"><img src="PHOTOSHOP.png"></div>
+    </div>
+   </div>
+   </div>
+   <script>
+        ScrollReveal({
+            reset: true,
+            distance: '60px',
+            duration: 2500,
+            delay: 400
+        });
+        ScrollReveal().reveal('.Skill',{ delay:700, origin: 'left'});
+        ScrollReveal().reveal('.SKILLS',{ delay:600, origin: 'right'});
+        ScrollReveal().reveal('.skilcons',{ delay:700, origin: 'left'});
+        
+      
+
+    </script>
+
+ <footer>
+    <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+    </div>
+    
+    <ul class="media_icon">
+        <li><a href="https://www.linkedin.com/in/mungara-hithesh-yadav-7a473a20b/"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://instagram.com/hithesh_yadav_?igshid=YmMyMTA2M2Y="><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://twitter.com/HitheshYadav3"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://github.com/Hitheshgithub" ><i class="fab fa-github"></i></a></li>
+        <li><a href="https://www.facebook.com/hithesh.yadav.50" ><i class="fab fa-facebook"></i></a></li>
+        <li><a href="https://www.youtube.com/channel/UCRhrGeg5VPgRrbDBSpuTxDA"><i class="fab fa-youtube"></i></a></li>
+    </ul>
+    <ul class="menu">
+        <li><a href="#HOME">Home</a></li>
+        <li><a href="#ABOUT">About</a></li>
+        <li><a href="#PROJECTS">Projects</a></li>
+        <li><a href="#INTERNSHIPS">Internships</a></li>
+        <li><a href="#SKILLS">skills</a></li>
+    </ul>
+
+    <h3>Contact: Hitheshyadav110@gmail.com | 91+ 756 960 7990
+    <p>©2023 Hithesh Portfolio | All Rights Reserved</p>
+
+
+</script>
+     
+
+ </footer>
+
+</body>
+</html> 
+
